@@ -11,8 +11,7 @@ public class Login : MonoBehaviour
     // 아이디 비밀번호 입력란
     public InputField useridInput;
     public InputField passwordInput;
-
-    // Start is called before the first frame update
+    
     public void OnLoginButtonClick()
     {
         // 입력된 아이디 비밀번호
