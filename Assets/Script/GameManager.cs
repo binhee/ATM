@@ -18,11 +18,7 @@ public class GameManager : MonoBehaviour
     
     //사용자가 입력하는 금액을 입금 및 출금 받기 위한 InputField
     public InputField depositAmountInput;
-    public InputField withdrawalAmountInput;
-
-    // 아이디 비밀번호 입력란
-    public InputField useridInput;
-    public InputField passwordInput;    
+    public InputField withdrawalAmountInput;       
 
     private int moneyAmount;
     private int banlanceAmount;
@@ -35,29 +31,6 @@ public class GameManager : MonoBehaviour
 
         UpdateMoneyText();
         UpdateBanlanceText();        
-    }
-
-    public void OnLoginButtonClick()
-    {
-        // 입력된 아이디 비밀번호
-        string userid = useridInput.text;
-        string password = passwordInput.text;
-
-        //아이디와 비밀번호가 일치하는지 확인
-        if (CheckCredentials(userid, password))
-        {
-            SceneManager.LoadScene("MainScene");
-        }
-        else
-        {
-            ErrorPanel.SetActive(true);
-        }
-    }
-
-    // 아이디와 비밀번호를 확인하는 함수
-    private bool CheckCredentials(string userid, string password)
-    {
-        return userid == "1" && password == "1";
     }
 
     // 입금 버튼이 클릭되었을 때 호출되는 메소드

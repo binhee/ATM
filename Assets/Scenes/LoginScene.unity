@@ -4663,60 +4663,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878275431}
   m_CullTransparentMesh: 1
---- !u!1 &1889023525
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1889023527}
-  - component: {fileID: 1889023526}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1889023526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889023525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b2d31d81d57f7241bd72b083cdb7688, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DepositPanel: {fileID: 0}
-  WithdrawalPanel: {fileID: 0}
-  InsufficientBanlancePanel: {fileID: 0}
-  ErrorPanel: {fileID: 599967959}
-  Money: {fileID: 0}
-  Banlance: {fileID: 0}
-  depositAmountInput: {fileID: 0}
-  withdrawalAmountInput: {fileID: 0}
-  useridInput: {fileID: 920216460}
-  passwordInput: {fileID: 1806994949}
---- !u!4 &1889023527
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889023525}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1937358944
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,7 +5093,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1996514391}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: Login, Assembly-CSharp
         m_MethodName: OnLoginButtonClick
         m_Mode: 1
         m_Arguments:
@@ -5205,17 +5151,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1996514386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b2d31d81d57f7241bd72b083cdb7688, type: 3}
+  m_Script: {fileID: 11500000, guid: 9073265bb9254c44db543080f1147e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DepositPanel: {fileID: 0}
-  WithdrawalPanel: {fileID: 0}
-  InsufficientBanlancePanel: {fileID: 0}
   ErrorPanel: {fileID: 599967959}
-  Money: {fileID: 0}
-  Banlance: {fileID: 0}
-  depositAmountInput: {fileID: 0}
-  withdrawalAmountInput: {fileID: 0}
   useridInput: {fileID: 920216460}
   passwordInput: {fileID: 1806994949}
 --- !u!1 &2121889864
@@ -5359,4 +5298,3 @@ SceneRoots:
   - {fileID: 554943397}
   - {fileID: 1992419692}
   - {fileID: 72148220}
-  - {fileID: 1889023527}
