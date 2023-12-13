@@ -8,10 +8,11 @@ public class RegistrationSystem : MonoBehaviour
     public InputField useridInput;
     public InputField nameInput;
     public InputField passwordInput;
-    public InputField confirmPasswordInput;
-    public Text registrationResultText;
+    public InputField confirmPasswordInput;    
 
     public GameObject SignUpPanel;
+    public GameObject SignUpSucPanel;
+    public GameObject ErrorPanel;
 
     public void OnSignUpButtonClicked()
     {
@@ -21,7 +22,7 @@ public class RegistrationSystem : MonoBehaviour
     public void ToggleSignUpPanel()
     {
         SignUpPanel.SetActive(true);
-    }
+    }    
 
     // 회원가입 버튼 클릭 시 실행되는 함수
     public void OnRegisterButtonClick()
@@ -37,13 +38,12 @@ public class RegistrationSystem : MonoBehaviour
 
         // 비밀번호와 비밀번호 확인이 일치하는지 확인
         if (password == confirmPassword)
-        {            
-            Debug.Log("회원가입 성공 - 아이디: " + userid + ", 비밀번호: " + password);
-            registrationResultText.text = "회원가입 성공!";
+        {
+            SignUpSucPanel.SetActive(true);
         }
         else
         {
-            registrationResultText.text = "비밀번호가 일치하지 않습니다.";
+            ErrorPanel.SetActive(true);
         }
     }
 
@@ -55,5 +55,7 @@ public class RegistrationSystem : MonoBehaviour
     private void CancelPanel()
     {
         SignUpPanel.SetActive(false);
-    }    
+        ErrorPanel.SetActive(false);
+        SignUpSucPanel.SetActive(false);
+    }      
 }
